@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Huemone Lab"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2017-12-14 02:04:07 &#50724;&#54980;"/>
+        <attribute name="created" value="SHVlbW9uZSBMYWI7IExBUFRPUC1BNlJQME44UTsgMjAxNy0xMi0xNDsgMDI6MDA6MjEg7Jik7ZuEOyAxMDg5ODc="/>
+        <attribute name="edited" value="SHVlbW9uZSBMYWI7IExBUFRPUC1BNlJQME44UTsgMjAxNy0xMi0xNDsgMDI6MDQ6MDcg7Jik7ZuEOyAxMDg5OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iterator" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="x" type="Integer" array="True" size="100"/>
+            <for variable="i" start="0" end="99" direction="inc" step="1">
+                <assign variable="x[i]" expression="i"/>
+            </for>
+            <input variable="iterator"/>
+            <output expression="x[iterator]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

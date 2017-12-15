@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Huemone Lab"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2017-12-14 02:16:33 &#50724;&#54980;"/>
+        <attribute name="created" value="SHVlbW9uZSBMYWI7IExBUFRPUC1BNlJQME44UTsgMjAxNy0xMi0xNDsgMDI6MTM6MzQg7Jik7ZuEOyAxMDg5OTU="/>
+        <attribute name="edited" value="SHVlbW9uZSBMYWI7IExBUFRPUC1BNlJQME44UTsgMjAxNy0xMi0xNDsgMDI6MTY6MzMg7Jik7ZuEOyAxMDg5OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inputNum" type="Integer" array="False" size=""/>
+            <input variable="inputNum"/>
+            <call expression="factorial(inputNum)"/>
+        </body>
+    </function>
+    <function name="factorial" type="None" variable="">
+        <parameters>
+            <parameter name="number" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="iterator" type="Integer" array="False" size=""/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <assign variable="value" expression="1"/>
+            <for variable="iterator" start="number" end="1" direction="dec" step="1">
+                <assign variable="value" expression="value*iterator"/>
+            </for>
+            <output expression="value" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

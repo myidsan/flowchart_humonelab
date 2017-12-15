@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Huemone Lab"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2017-12-14 02:00:08 &#50724;&#54980;"/>
+        <attribute name="created" value="SHVlbW9uZSBMYWI7IExBUFRPUC1BNlJQME44UTsgMjAxNy0xMi0xNDsgMDE6MzQ6NTEg7Jik7ZuEOyAxMDg5OTY="/>
+        <attribute name="edited" value="SHVlbW9uZSBMYWI7IExBUFRPUC1BNlJQME44UTsgMjAxNy0xMi0xNDsgMDI6MDA6MDgg7Jik7ZuEOyAxMDg5OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="product" type="Integer" array="False" size=""/>
+            <declare name="x" type="Integer" array="True" size="3"/>
+            <input variable="x[0]"/>
+            <input variable="x[1]"/>
+            <input variable="x[2]"/>
+            <assign variable="product" expression="returnProduct(x[0],x[1],x[2])"/>
+            <if expression="product &gt; 5">
+                <then>
+                    <output expression="&quot;product is bigger than 5&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;product is less than 5. Try again&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="returnProduct" type="Integer" variable="products">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+            <parameter name="z" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="numOne" type="Integer" array="False" size=""/>
+            <declare name="numTwo" type="Integer" array="False" size=""/>
+            <declare name="numThree" type="Integer" array="False" size=""/>
+            <declare name="products" type="Integer" array="False" size=""/>
+            <assign variable="products" expression="x*y*z"/>
+            <output expression="products" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
